@@ -39,4 +39,5 @@ Una Transaccion tiene las siguientes propiedades:
 - fecha
 - monto
 - tipo
+
 Donde tipo es la propiedad que hace la diferencia entre definir la transaccion como ingreso o gasto.
