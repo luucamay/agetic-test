@@ -1,4 +1,5 @@
 import React from 'react';
+import TransactionTable from './TransactionTable.js'
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <div className="flex-row">
         <div className="flex-large">
           <h2>Transacciones</h2>
+          <TransactionTable />
         </div>
       </div>
     </div>
