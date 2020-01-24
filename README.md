@@ -1,6 +1,9 @@
 # agetic-test
 ## Proyecto: Registro de gastos e ingresos
 Desarrollar una aplicación que permita registrar los ingresos y gastos diarios de una persona.
+## Pre-requerimientos
+- Node v12.14.1
+- npm 6.13.4
 ## Backend
 Se ha realizado un backend con nodejs, express, y nedb (para la base de datos)
 ### Instrucciones para ejecutar el endpoint
