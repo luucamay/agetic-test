@@ -1,4 +1,5 @@
-{"categoria":"saldo","descripcion":"primer saldo","monto":"3500","_id":"zA7ZOt9pdU3QtFhk","createdAt":{"$$date":1579896923027},"updatedAt":{"$$date":1579896923027}}
-{"$$deleted":true,"_id":"Trl25Bwo0DEzBtNz"}
-{"$$deleted":true,"_id":"AMzdFdQDtB4Snv65"}
-{"$$deleted":true,"_id":"Jnf4i1ukCmVxuh9V"}
+{"categoria":"saldo","descripcion":"primer saldo","monto":"3500","_id":"PEE6daTlzCktjvfV","createdAt":{"$$date":1579898258229},"updatedAt":{"$$date":1579898258229}}
+{"categoria":"saldo","descripcion":"primer saldo","monto":"3500","_id":"hY1H8qwKckQsv9eu","createdAt":{"$$date":1579898104487},"updatedAt":{"$$date":1579898104487}}
+{"categoria":"otra","descripcion":"nueva des","monto":2000,"type":"gasto","_id":"q5xoChgcr4fPoLao","createdAt":{"$$date":1579898328536},"updatedAt":{"$$date":1579898357682}}
+{"categoria":"otra","descripcion":"nueva des","monto":2000,"_id":"zA7ZOt9pdU3QtFhk","createdAt":{"$$date":1579896923027},"updatedAt":{"$$date":1579898073763},"type":"gasto"}
+{"categoria":"otra","descripcion":"nueva nueva des","monto":8000,"tipo":"gasto","_id":"PEE6daTlzCktjvfV","createdAt":{"$$date":1579898258229},"updatedAt":{"$$date":1579898434295}}

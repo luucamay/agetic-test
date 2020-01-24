@@ -55,7 +55,8 @@ app.post('/transactions', function(req, res) {
 	  var transaction = {
 		      categoria: req.body.categoria,
 		      descripcion: req.body.descripcion,
-		      monto: req.body.monto,
+			  monto: req.body.monto,
+			  tipo: req.body.tipo
 		    };
 	  db.insert(transaction, function(err, transaction) {
 		      if (err) res.send(err);
@@ -72,6 +73,25 @@ app.get('/transactions/:id', function(req, res) {
 			        if (err) res.send(err);
 			        res.json(transaction);
 			      });
+});
+
+// UPDATE a transaction.
+// (Accessed at PUT http://localhost:8080/transactions/transaction_id)
+app.put('/transactions/:id', function(req, res) {
+	var transaction_id = req.params.id;
+	db.update({
+			_id: transaction_id
+		  }, { 
+			  categoria: req.body.categoria,
+			  descripcion: req.body.descripcion,
+			  monto: req.body.monto,
+			  tipo: req.body.tipo
+			},
+			{},
+		   function(err, transaction) {
+				  if (err) res.send(err);
+				  res.sendStatus(200);
+				});
 });
 
 // DELETE a transaction.
