@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TransactionTable = () => (
+const TransactionTable = props => (
   <table>
     <thead>
       <tr>
@@ -12,17 +12,24 @@ const TransactionTable = () => (
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
+      {props.transactions.length > 0 ? (
+        props.transactions.map(transaction => (
+      <tr key={transaction.id}>
+        <td>{transaction.categoria}</td>
+        <td>{transaction.descripcion}</td>
+        <td>{transaction.fecha}</td>
+        <td>{transaction.monto}</td>
+        <td>{transaction.tipo}</td>
         <td>
           <button className="button muted-button">Edit</button>
           <button className="button muted-button">Delete</button>
         </td>
-      </tr>
+      </tr>))
+      ):(
+        <tr>
+          <td colSpan={3}>No transactions</td>
+        </tr>
+      )}
     </tbody>
   </table>
 )
