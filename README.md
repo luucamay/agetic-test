@@ -30,7 +30,7 @@ Ha sido desarrollado con ReactJS, con la base de **create-react-app**
 - Visita en tu navegador web de preferencia la direccion **localhost:3000**
 
 ## Base de datos
-La base de datos utilizada en es proyecto es nedb (sí, se que esta en contra de la reglas, lo siento, pero planeaba cambiarla si habia tiempo) que es una base de datos minimalista escrita enteramente en Javascript.
+La base de datos utilizada en es proyecto es nedb que es una base de datos minimalista escrita enteramente en Javascript (sí, se que esta en contra de la reglas, lo siento, pero planeaba cambiarla si habia tiempo).
 
 Solo se ha considerado un tipo de dato hasta el momento que es Transacciones.
 Una Transaccion tiene las siguientes propiedades:
