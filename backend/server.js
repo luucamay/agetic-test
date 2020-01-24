@@ -53,7 +53,9 @@ app.get('/transactions', function(req, res) {
 // (Accessed at POST http://localhost:8080/transactions)
 app.post('/transactions', function(req, res) {
 	  var transaction = {
-		      description: req.body.description,
+		      categoria: req.body.categoria,
+		      descripcion: req.body.descripcion,
+		      monto: req.body.monto,
 		    };
 	  db.insert(transaction, function(err, transaction) {
 		      if (err) res.send(err);
