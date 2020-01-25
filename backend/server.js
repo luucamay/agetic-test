@@ -2,8 +2,9 @@
 
 // DEPENDENCIES
 // ===============================================
-
+const cors = require('cors')
 var express = require('express'),
+
   app = express(),
   bodyParser = require('body-parser'); // Middleware to read POST data
 
@@ -13,6 +14,8 @@ var express = require('express'),
 // Set the port number.
 var   port = Number(process.env.PORT || 8080);
 
+// set cors
+app.use(cors())
 // Set up body-parser.
 // To parse JSON:
 app.use(bodyParser.json());
