@@ -1,14 +1,24 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import TransactionTable from './TransactionTable.js'
+import axios from 'axios';
 
 function App() {
-  const transactionsData = [
-    { id: 1, categoria: 'Salario', descripcion: 'flopp', fecha: '2020-01-21', monto: 2000, tipo:'ingreso' },
-    { id: 1, categoria: 'gatos', descripcion: 'es necesario', fecha: '2020-01-21', monto: 1000, tipo:'gasto' },
-    { id: 1, categoria: 'comida', descripcion: 'importante', fecha: '2020-01-21', monto: 800, tipo:'gasto' }
-  ]
+  const [transactions, setTransactions] = useState([])
 
-  const [transactions, setTransactions] = useState(transactionsData)
+  useEffect(() => {
+    getTransactions()
+  }, [])
+
+  const getTransactions = async () => {
+    await axios.get('http://localhost:8080/transactions')
+      .then(response => {
+        console.log(response.data)
+        setTransactions(response.data)
+      }).catch(error => {
+        console.error(error)
+      })
+  }
+
   return (
     <div className="container">
       <h1>Registro de gastos e ingresos</h1>

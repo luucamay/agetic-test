@@ -14,7 +14,7 @@ const TransactionTable = props => (
     <tbody>
       {props.transactions.length > 0 ? (
         props.transactions.map(transaction => (
-      <tr key={transaction.id}>
+      <tr key={transaction._id}>
         <td>{transaction.categoria}</td>
         <td>{transaction.descripcion}</td>
         <td>{transaction.fecha}</td>
